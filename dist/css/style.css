@@ -1,0 +1,148 @@
+/*dark code*/
+*{
+    font-family: sans-serif;
+    list-style: none;
+    padding: 0;
+  }
+  body{
+    background:#333;
+  }
+  .skills{
+      width: 500px;
+      margin: 60px auto;
+      color: white;
+  }
+  
+  .skills li{
+      margin: 20px 0;
+  }
+  .bar{
+      background: #353b48;
+      display: block;
+      height: 2px;
+      border: 1px solid rgba(0,0,0,0,0.3);
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow:0 0 10px #2187e7b3;
+  }
+  .bar span{
+      height: 2px;
+      float: left;
+      background: #2187e7;
+  }
+   
+  .html{
+      width: 90%;
+      animation: html 2s;
+  }
+
+  .css{
+      width: 50%;
+      animation: css 2s;
+  }
+
+
+  .jscp{
+    width: 30%;
+    animation: jscp 2s;
+}
+
+ .sass{ 
+    width: 20%;
+    animation: sass 2s;
+}
+@keyframes html{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:90%;
+    } 
+}
+    @keyframes css{
+        0%{
+            width:65%;
+        }
+    }
+        @keyframes jscp{
+            0%{
+                width:50%;
+            }
+
+        }
+        @keyframes sass{
+            0%{
+                width:10%;
+            }
+
+}
+
+
+
+
+
+
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+  }
+  .container{
+    text-align: center;
+    margin-top: 360px;
+  }
+  .btn{
+    border: 1px solid #3498db;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn1,.btn2{
+    color: #3498db;
+  }
+  .btn3,.btn4{
+    color: #fff;
+  }
+  .btn1:hover,.btn2:hover{
+    color: #fff;
+  }
+  .btn3:hover,.btn4:hover{
+    color: #3498db;
+  }
+  .btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #3498db;
+    z-index: -1;
+    transition: 0.8s;
+  }
+  .btn1::before,.btn3::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+  }
+  .btn2::before,.btn4::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+  }
+  .btn3::before,.btn4::before{
+    height: 180%;
+  }
+  .btn1:hover::before,.btn2:hover::before{
+    height: 180%;
+  }
+  .btn3:hover::before,.btn4:hover::before{
+    height: 0%;
+  }
+  
